@@ -52,7 +52,8 @@ impl ArticleDate {
                 .modifiers(TextModifiers::BOLD | TextModifiers::ITALIC)
                 .text(
                     datetime
-                        .map(|x| fmt_helpers::format_datetime(x, "%A %d %B %Y, %H:%M"))
+                        // .map(|x| fmt_helpers::format_datetime(x, "%A %d %B %Y, %H:%M"))
+                        .map(|x| fmt_helpers::format_datetime(x, "%Y-%m-%d"))
                         .unwrap_or_default(),
                 ),
         }

@@ -80,8 +80,8 @@ impl Ui {
                     .margin(1)
                     .constraints(
                         [
-                            Constraint::Percentage(50), // Lists
-                            Constraint::Percentage(50), // Article
+                            Constraint::Percentage(25), // Lists
+                            Constraint::Percentage(25), // Article
                         ]
                         .as_ref(),
                     )
